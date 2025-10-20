@@ -114,7 +114,7 @@ extern class YoutubePlayer {
 
 }
 
-@:enum abstract PlaybackQuality(String) from String to String {
+enum abstract PlaybackQuality(String) from String to String {
 	var small   :String = 'small';
 	var medium  :String = 'medium';
 	var large   :String = 'large';
@@ -124,27 +124,27 @@ extern class YoutubePlayer {
 	var _default:String = 'default';
 }
 
-@:enum abstract Color(String) from String to String {
+enum abstract Color(String) from String to String {
     var red  :String = 'red';
     var white:String = 'white';
 }
 
-@:enum abstract ListType(String) from String to String {
+enum abstract ListType(String) from String to String {
 	var search      :String = 'search';
 	var user_uploads:String = 'user_uploads';
 	var playlist    :String = 'playlist';
 }
 
-@:enum abstract OptionModule(String) from String to String {
+enum abstract OptionModule(String) from String to String {
 	var cc:String = 'cc';
 }
 
-@:enum abstract ModuleOption(String) from String to String {
+enum abstract ModuleOption(String) from String to String {
 	var fontsize:String = 'fontsize';
 	var reload  :String = 'reload';
 }
 
-@:enum abstract YoutubePlayerState(Int) {
+enum abstract YoutubePlayerState(Int) {
 	var UNSTARTED = -1;
 	var ENDED     = 0;
 	var PLAYING   = 1;
